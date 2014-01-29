@@ -12,14 +12,14 @@ Set oShell = WScript.CreateObject("WScript.Shell")
 Set oArgs = Wscript.Arguments
 bLoc = False
 
-If oArgs.Count <> 2 Then
+If oArgs.Count <> 1 Then
      Wscript.Echo "Usage:" & vbcrlf & _
-                  "cscript.exe get-InstalledApps.vbs $host $IdentifyingNumber"
+                  "cscript.exe get-InstalledApps.vbs $IdentifyingNumber"
      Wscript.Quit 5
 
 End If
 
-wmiServer = oArgs(0)
+wmiServer = "127.0.0.1"
 strId     = oArgs(1)
 
 set oLocator = CreateObject("WbemScripting.SWbemLocator")
