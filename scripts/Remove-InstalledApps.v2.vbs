@@ -20,7 +20,7 @@ If oArgs.Count <> 1 Then
 End If
 
 wmiServer = "127.0.0.1"
-strId     = oArgs(1)
+strId     = oArgs(0)
 
 set oLocator = CreateObject("WbemScripting.SWbemLocator")
 
