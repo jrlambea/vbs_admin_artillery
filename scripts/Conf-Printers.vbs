@@ -1,3 +1,13 @@
+'
+' Author Jose Ramón Lambea @jr_lambea
+'
+' 140422 New script, configures the available printers with a default settings.
+'
+' Usage:
+'
+' cscript.exe Conf-Printers.vbs
+'
+
 Const HKEY_LOCAL_MACHINE	= &H80000002
 
 Dim objRegistry, strKeyPath, printerlist, strComputer
